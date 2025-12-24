@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Theory – Eigen Values and Eigen Vectors</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #0ea5a4;
+    }
+
+    h2 {
+        color: #1f2937;
+        border-bottom: 2px solid #0ea5a4;
+        padding-bottom: 5px;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #374151;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+        line-height: 1.6;
+    }
+
+    .example {
+        background: #f1f5f9;
+        padding: 15px;
+        border-left: 5px solid #0ea5a4;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #6b7280;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+    <link rel='stylesheet' href='theory.css'>
+
+<div class="container">
+    <h1>Eigen Values and Eigen Vectors</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        Eigen values and eigen vectors are important concepts in linear algebra.
+        They are widely used in engineering, physics, computer science, and data analysis.
+        They help in understanding linear transformations represented by matrices.
+    </p>
+
+    <h2>Definition</h2>
+    <p>
+        For a square matrix <b>A</b>, a non-zero vector <b>X</b> is called an
+        <b>Eigen Vector</b> of <b>A</b> if:
+    </p>
+    <p style="text-align:center;"><b>AX = λX</b></p>
+    <p>
+        where <b>λ</b> is a scalar known as the <b>Eigen Value</b> corresponding
+        to the eigen vector <b>X</b>.
+    </p>
+
+    <h2>Steps to Find Eigen Values</h2>
+    <ol>
+        <li>Form the identity matrix <b>I</b> of the same order as matrix <b>A</b>.</li>
+        <li>Subtract <b>λI</b> from <b>A</b> to get <b>(A − λI)</b>.</li>
+        <li>Find the determinant of <b>(A − λI)</b>.</li>
+        <li>Set the determinant equal to zero:
+            <br><b>|A − λI| = 0</b></li>
+        <li>Solve the resulting characteristic equation to obtain eigen values <b>λ</b>.</li>
+    </ol>
+
+    <h2>Steps to Find Eigen Vectors</h2>
+    <ol>
+        <li>Substitute each eigen value <b>λ</b> into <b>(A − λI)</b>.</li>
+        <li>Solve the homogeneous system:
+            <br><b>(A − λI)X = 0</b></li>
+        <li>Find the non-zero solution vector <b>X</b>.</li>
+        <li>The vector <b>X</b> obtained is the eigen vector corresponding to eigen value <b>λ</b>.</li>
+    </ol>
+
+    <h2>Example</h2>
+    <div class="example">
+        <p>
+            Let <b>A = [ [2, 1], [1, 2] ]</b>
+        </p>
+        <p>
+            <b>Step 1:</b> Form <b>|A − λI|</b><br>
+            |2−λ &nbsp; 1|<br>
+            |1 &nbsp; 2−λ|
+        </p>
+        <p>
+            <b>Step 2:</b> Solve determinant:<br>
+            (2−λ)² − 1 = 0
+        </p>
+        <p>
+            <b>Step 3:</b> Eigen values are λ = 1, 3
+        </p>
+    </div>
+
+    <h2>Applications</h2>
+    <ul>
+        <li>Stability analysis in engineering systems</li>
+        <li>Image processing and computer vision</li>
+        <li>Quantum mechanics</li>
+        <li>Data science and machine learning</li>
+    </ul>
+
+    <footer>
+        Virtual Lab – Eigen Values and Eigen Vectors
+    </footer>
+</div>
+
+</body>
+</html>
