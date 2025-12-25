@@ -103,7 +103,7 @@ header {
 
 /* 4. Highlighted Feedback Card */
 .feedback-card {
-    border: 2px dashed var(--secondary) !important;
+    border: 2px solid var(--secondary) !important;
 }
 
 .feedback-card:hover {
@@ -111,7 +111,7 @@ header {
 }
 
 .feedback-card i {
-    background: linear-gradient(135deg, var(--secondary), #f472b6);
+    background: linear-gradient(135deg, var(--secondary), rgba(6, 182, 212, 0.4));
     -webkit-background-clip: text;
 }
 
