@@ -111,7 +111,7 @@ header {
 }
 
 .feedback-card i {
-    background: linear-gradient(135deg, var(--secondary), rgba(6, 182, 212, 0.4));
+    background: linear-gradient(135deg, var(--secondary), rgba(6, 182, 212, 0.4);
     -webkit-background-clip: text;
 }
 
