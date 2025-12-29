@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eigen Values and Eigen Vectors – Virtual Lab</title>
+
+<style>
+:root {
+  --primary: #0ea5a4;
+  --secondary: #6366f1;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN WRAPPER */
+.wrapper {
+  max-width: 900px;
+  width: 90%;
+  background: var(--card);
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+}
+
+/* MAIN HEADING */
+.main-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-heading h1 {
+  font-size: 32px;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.main-heading p {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* DIVIDER */
+.divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  margin: 18px auto 0;
+  border-radius: 4px;
+}
+
+/* AIM CARD */
+.aim-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 30px;
+  border-left: 6px solid var(--primary);
+  margin-top: 30px;
+}
+
+/* AIM TITLE */
+.aim-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.aim-title span {
+  font-size: 28px;
+}
+
+.aim-title h2 {
+  font-size: 24px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* AIM CONTENT */
+.aim-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* HIGHLIGHT TEXT */
+.highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* FOOT NOTE */
+.note {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #475569;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .main-heading h1 {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="aim.css">
+
+<div class="wrapper">
+
+  <!-- MAIN HEADING -->
+  <div class="main-heading">
+    <h1>Eigen Values and Eigen Vectors</h1>
+    <p>Virtual Laboratory – Linear Algebra</p>
+    <div class="divider"></div>
+  </div>
+
+  <!-- AIM SECTION -->
+  <div class="aim-card">
+    <div class="aim-title">
+      <span>🎯</span>
+      <h2>Aim</h2>
+    </div>
+
+    <p class="aim-text">
+      The aim of this experiment is to <span class="highlight">study, understand, and compute
+      the eigen values and eigen vectors</span> of a given square matrix.  
+      This virtual lab enables learners to analyze the <span class="highlight">characteristic
+      equation</span>, determine eigen values, and find the corresponding eigen vectors,
+      thereby enhancing their understanding of <span class="highlight">linear transformations</span>
+      and matrix theory.
+    </p>
+  </div>
+
+  <div class="note">
+    Designed for academic learning and conceptual clarity
+  </div>
+
+</div>
+
+</body>
+</html>
